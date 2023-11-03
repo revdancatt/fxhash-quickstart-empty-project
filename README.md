@@ -18,13 +18,13 @@ Alternatively follow the more advanced instructions on https://github.com/fxhash
 
 This is the order that things happen in the code...
 
-1. setup() is called as soon as the script is loaded, this is so we can hand the features off to fxhash as quickly as possible. fxhash likes to have all the features defined before anything else happens.
+1. `setup()` is called as soon as the script is loaded, this is so we can hand the features off to fxhash as quickly as possible. fxhash likes to have all the features defined before anything else happens.
 
-2. init() is called at the bottom of the script when the html DOM is fully loaded, to make sure all scripts and css are available. If you wanted to preload images or data, you'd check those were also loaded before calling init(). init() is only ever called once. init() then loads layoutCanvas().
+2. `init()` is called at the bottom of the script when the html DOM is fully loaded, to make sure all scripts and css are available. If you wanted to preload images or data, you'd check those were also loaded before calling `init()`. `init()` is only ever called once. `init()` then loads `layoutCanvas()`.
 
-3. layoutCanvas() is called by init(), and also called whenever the window is resized. Layout is in control of destroying old canvas objects and creating new ones. If you needed to use canvas buffers, or create textures, this is where you'd also redefine those based on the new size of the window. layoutCanvas() calls draw().
+3. `layoutCanvas()` is called by `init()`, and also called whenever the window is resized. Layout is in control of destroying old canvas objects and creating new ones. If you needed to use canvas buffers, or create textures, this is where you'd also redefine those based on the new size of the window. `layoutCanvas()` calls `draw()`.
 
-4. draw() is called by layoutCanvas(). This is where all the drawing stuff happens. If the artwork is animated draw() will call itself again in the next animation frame. If not then draw() is only called again if the window resizes. In this script fxhash will be told to take a thumbnail at the end of the _first_ run of draw()
+4. `draw()` is called by `layoutCanvas()`. This is where all the drawing stuff happens. If the artwork is animated `draw()` will call itself again in the next animation frame. If not then `draw()` is only called again if the window resizes. In this script fxhash will be told to take a thumbnail at the end of the _first_ run of `draw()`
 
 
 # Where your stuff goes...
