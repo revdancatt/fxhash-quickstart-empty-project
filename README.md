@@ -50,11 +50,11 @@ This is how you draw everything you decided in the setup stage. The draw() funct
 The `fxhash.js` allows you to add a couple of things onto the url.
 
 * `?fxhash=xxxxxxxxxxxxx` Allows you to force the hash
-* `?fxiteration` lets you set the mint/iteration number
+* `?fxiteration=xx` lets you set the mint/iteration number
 
 This code allows you to add a few more...
 
-* `?forceDownload=true` Will cause the code to dump out a PNG at the end of the draw() function
+* `?forceDownload=true` Will cause the code to dump out a PNG at the end of the `draw()`` function
 * `?forceWidth=xxxx` forces the canvas to be a set width (height is based on the ratio) to generate images beyond the display window (or smaller I guess).
 * `?forceId=xxx` _prepend_ an id value to the filename when downloading the PNG, gets padded to a length of 4, i.e. `?forceId=1` becomes `0001`
 
