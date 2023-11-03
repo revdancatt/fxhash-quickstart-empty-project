@@ -45,7 +45,7 @@ const setup = () => {
   const lineColours = []
 
   // Now we loop through and pick some random colours for the lines
-  const numberOfLines = Math.floor($fx.rand() * 3) + 2
+  const numberOfLines = Math.floor($fx.rand() * 3) + 3
   for (let i = 0; i < numberOfLines; i++) {
     // Pick a random index
     const index = Math.floor($fx.rand() * foregroundColours.length)
