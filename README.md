@@ -12,7 +12,9 @@ Alternatively follow the more advanced instructions on https://github.com/fxhash
 
 ## Further info
 
-[This is where I'll put links to YouTube and so on]
+This project goes with a series of videos on YouTube...
+
+1. Create and upload an fxhash project the easy way | Unofficial fxhash Episode 01 https://www.youtube.com/watch?v=is675ca2Hz0
 
 ## Script flow
 
