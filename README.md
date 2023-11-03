@@ -35,15 +35,15 @@ The first line controls the ratio of the artwork, most works are 1/1. But you ma
 
 The second line is the filename it'll save any outputs you generate, you most likely want to change this.
 
-### Setup
+### setup()
 
 The setup function is where you make _all_ the decisions about what goes where and how it's going to look. This framework has an example of picking a background colour and the colour of some lines to draw. Along with passing those features to fxhash so it can be displayed.
 
 You'll strip this out and replace it with your own code.
 
-### Draw
+### draw()
 
-This is how you draw everything you decided in the setup stage. The draw() function contains a few helpers at the end for controlling the preview thumbnail being taken and downloading the images. Your own code goes into the marked "Your code goes here" 😁
+This is how you draw everything you decided in the setup stage. The `draw()` function contains a few helpers at the end for controlling the preview thumbnail being taken and downloading the images. Your own code goes into the marked "Your code goes here" 😁
 
 # URL Params
 
